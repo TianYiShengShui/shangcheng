@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vip | 搜索页</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<header id="vip-common-header" class="header vip-common-header clearfix ">
+    <nav class="top-nav">
+        <div id="J_top_nav" class="head-inner">
+            <div class="sel-area">
+                <div class="sel-area-change" id="J_areaSelect_btn" mars_sead="home_header_location">
+                    <div class="sel-area-btn"><span id="J_selected_province" class="sel-province">上海</span><i class="ico-dis"></i></div>
+                    <div class="sel-area-box" id="J_area_content"><div class="sel-area-box-inner" id="J-areaBinner">  <i class="ico-arw-bodder" style="width: 85px;"></i>  <p class="sab-tit">请选择所在的收货地区</p>  <table class="sab-table" mars_sead="home_top_zone_link"><tbody><tr>      <th>A</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103104">安徽</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104108">澳门</span></td>    </tr><tr>      <th>B</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101101">北京</span></td>    </tr><tr>      <th>C</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105100">重庆</span></td>    </tr><tr>      <th>F</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="103105">福建</span></td>    </tr><tr>      <th>G</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104104">广东</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104105">广西</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105102">贵州</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106102">甘肃</span></td>    </tr><tr>      <th>H</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101103">河北</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="104101">河南</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="102103">黑龙江</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104106">海南</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="104102">湖北</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="104103">湖南</span></td>    </tr><tr>      <th>J</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103102">江苏</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="102102">吉林</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="103106">江西</span></td>    </tr><tr>      <th>L</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="102101">辽宁</span></td>    </tr><tr>      <th>N</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101105">内蒙古</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106104">宁夏</span></td>    </tr><tr>      <th>Q</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106103">青海</span></td>    </tr><tr>      <th>S</th>      <td><span class="J_select_item selected" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103101">上海</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103107">山东</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101104">山西</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105101">四川</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="106101">陕西</span></td>    </tr><tr>      <th>T</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104109">台湾</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101102">天津</span></td>    </tr><tr>      <th>X</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105104">西藏</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104107">香港</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106105">新疆</span></td>    </tr><tr>      <th>Y</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105103">云南</span></td>    </tr><tr>      <th>Z</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103103">浙江</span></td>    </tr>  </tbody></table></div></div>
+                </div>
+            </div>
+            <ul class="top-nav-tool f-top-login-after" id="J-topNavTool">
+                <li class="wp-my">
+                    <ul id="J_head_log" class="login-before login_after">
+                        <li class="wp-user" data-hover="wp-user-hover" id="J-wp-user">
+        <span class="user-in" id="J_user_logined">
+            <a id="J_viplevel" href="" target="_blank" class="user-in-vip"><i class="uv-1"></i></a>
+            <a href="" _blank"="" class="user-in-name">admin </a>
+            <i class="ico-dis"></i>
+        </span>
+                            <p class="hidden top-nav-inf" id="J_user_unLogin">
+            <span class="top-nav-inf-pc">
+                <a href="login.html" home_top_nav2_login"="" class="J_header_lnkLogin" rel="nofollow">
+                <em class="name">{$J_header_account}</em><span class="u-name-slash">/</span> 请登录
+                </a>
+                <i class="ico-dis"></i>
+            </span>
+                            </p>
+                            <span class="hidden user-noid" id="J_user_noId">
+            <a href="login.html" home_top_nav2_login"="" class="J_header_lnkLogin" rel="nofollow">请登录</a>
+        </span>
+
+                            <div class="top-nav-dis user-infor user-login-ed" id="J_userInfo">
+                                <i class="ico-arw-bodder" id="J-ico-arw-bodder" style="width: 125px;"></i>
+                                <div class="top-nav-inf clearfix">
+                                    <span class="top-nav-pic-avater"></span>
+                                    <div class="top-nav-pic-infs">
+                                        <p id="J_uInfo_name"><a href="" home_top_nav2_login"="" class="J_header_lnkLogin" rel="nofollow"><span id="J_uInfo_welcom">欢迎回来</span> <span class="top-nav-login">[请登录]</span></a>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="top-nav-pic clearfix">
+                                    <a class="top-nav-pic-avater" mars_sead="top_nav2_log_my2" id="J_topNavUserAvatar" href="//myi.vip.com/index.html" target="_blank"></a>
+                                    <div class="top-nav-pic-infs">
+                                        <a href="" _blank"="" id="J_nPic_name" class="top-nav-nickname" mars_sead="top_nav2_log_my">admin</a>
+                                        <a href="" top-nav-logout"="" id="J_header_lnkLogOut" mars_sead="home_top_nav2_log_logout">[退出]</a>
+                                    </div>
+                                </div>
+                                <p class="top-nav-list">
+                <span>
+                    <a href="" home_top_nav2_log_collect"="" target="_blank">我的收藏</a>
+                </span>
+                                    <span>
+                    <a href="" home_top_nav2_log_order"="" target="_blank">我的订单
+                        <i id="J-header-myOrder" class="top-nav-order-num"></i>
+                                        </a>
+                </span>
+                                    <span>
+                    <a href="" home_top_nav2_log_wallet"="" target="_blank">零钱</a>
+                </span>
+                                    <span>
+                    <a href="" home_top_nav2_log_coupon"="" target="_blank">我的优惠券</a>
+                </span>
+                                    <span>
+                    <a href="" home_top_nav2_log_vipmoney"="" target="_blank">我的唯品币</a>
+                </span>
+                                    <span id="J_user_msg">
+                    <a href="" home_top_nav2_log_message"="" target="_blank">最新消息</a>
+                                        <i id="J_user_msgIcon" class="ico-myinfor" title="查看我的信息"></i>
+                </span>
+                                    <span>
+                    <a href="" home_top_nav2_log_jinrong"="" target="_blank">唯品金融</a>
+                </span>
+                                </p>
+                            </div>
+                        </li>
+                        <li id="J_Register_hasnoname" class="register_hasnoname hidden">
+                            <a href="" home_top_nav2_reg"="" class="i-link J_header_lnkRegister" rel="nofollow">注册</a>  </li>
+                    </ul>
+                </li>
+
+                <li class="wp-order" data-hover="wp-order-hover">
+                    <span class="order-in">
+                        <a href="" home_top_nav2_order"="" target="_blank" rel="nofollow">我的订单</a>
+                    </span>
+                </li>
+                <li class="wp-service wp-fav-nav" data-hover="wp-fav-nav-hover" id="J-favs">
+                    <span class="service-in">
+                        <a href="" _blank"="" mars_sead="home_top_nav2_collect" rel="nofollow">我的特卖</a>
+                        <i class="ico-dis"></i>
+                    </span>
+                    <div class="top-nav-dis service-infor fav-nav-drop">
+                        <i class="ico-arw-bodder"></i>
+                        <p class="top-nav-list">
+                            <span><a href="" _blank"="" mars_sead="home_top_nav2_brand" rel="nofollow">品牌收藏(<i id="J_favBrand_count">0</i>)</a></span>
+                            <span><a href="" _blank"="" mars_sead="home_top_nav2_product" rel="nofollow">商品收藏(<i id="J_favCommodity_count">0</i>)</a></span>
+                            <span><a href="" _blank"="" mars_sead="home_top_nav2_footprint" rel="nofollow">我的足迹(<i id="J_footprint_count">0</i>)</a></span>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="wp-service" data-hover="wp-service-hover">
+                    <span class="service-in">
+                        客户服务
+                        <i class="ico-dis"></i>
+                    </span>
+                    <div class="top-nav-dis service-infor">
+                        <i class="ico-arw-bodder"></i>
+                        <p class="top-nav-list">
+                            <span>
+                                <a href="" home_top_nav2_kefu"="" target="_blank" rel="nofollow">联系客服</a>
+                            </span>
+                            <span>
+                                <a href="" home_top_nav2_help"="" target="_blank" rel="nofollow">帮助中心</a>
+                            </span>
+                            <span>
+                                <a href="" home_top_nav2_feedback"="" target="_blank" rel="nofollow">服务中心</a>
+                            </span>
+                            <span>
+                                <a href="" home_top_nav2_feedback"="" target="_blank" rel="nofollow">知识产权投诉</a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li class="wp-phone" data-j-hover="wp-phone-hover" id="J_phone_tip">
+                    <span class="phone-in"><a href="" _blank"="" mars_sead="top_nav2_m" rel="nofollow"><i class="ico-mob"></i> 手机版</a></span>
+                    <div class="top-nav-dis phone-infor" id="J_phoneTip_con">
+                        <i class="ico-arw-bodder"></i>
+                        <span class="phone-close hidden" id="J_phone_close"></span>
+                        <div class="tc" id="J_phoneTips_wrap">
+                            <a href="" _blank"="">
+                            <img mars_sead="top_nav2_m_pic" class="J_qrcode_img" data-original="//b.appsimg.com/2016/06/17/863/1466134037230.jpg" src="//s2.vipstatic.com/img/share/blank.png" width="161" height="161" alt="二维码">
+                            </a>
+                            <p>
+                                <a href="" _blank"="">随时逛 及时抢</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="wp-service wp-business" data-hover="wp-service-hover">
+                    <span class="service-in">
+                        <a href="">更多</a>
+                        <i class="ico-dis"></i>
+                    </span>
+                    <div class="top-nav-dis service-infor-more">
+                        <i class="ico-arw-bodder"></i>
+                        <h5 class="service-more-hd clearfix">合作专区</h5>
+                        <p class="top-nav-list clearfix">
+                            <a href="" _blank"="" mars_sead="home_top_nav1_ncard" rel="nofollow">联名卡申请</a>
+                            <a href="" _blank"="" mars_sead="home_top_nav1_vipcard" rel="nofollow">唯品卡</a>
+                            <a href="" _blank"="" mars_sead="home_top_nav1_pay" rel="nofollow">支付专区</a>
+                        </p>
+                        <h5 class="service-more-hd clearfix service-more-hd2">关于我们</h5>
+                        <p class="top-nav-list clearfix service-more-p">
+                            <a href="" _blank"="">Sell on vip</a>
+                            <a href="" _blank"="" rel="nofollow">品牌招商</a>
+                            <a href="" _blank"="">官方博客</a>
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="head-logo">
+        <div class="head-inner  clearfix" id="J-head-inner-def">
+            <div id="J_head_cart" class="head-cart head-bag-car J_cart_ico cart-have-goods" data-hover="head-cart-hover">
+                <div class="tool" id="J_shortTime">
+                    <a href="" home_top_bag_button"="" target="_blank" rel="nofollow">
+                    <span class="ico-bag"></span>
+                    <span class="mycarttext-default" id="J-mycartText">购物袋</span>
+                    <span class="mycarttext-countdown  J_cart_countDowncart" id="J-mycartText-countdown">15:22</span>
+                    <span id="J_skuCount_container" class="counti-cons-bg">
+                            <span id="J_skuCount">1</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="tool-cn" id="J_headCartList_wrap"><div class="head-cart-inner">    <p class="cs-time" id="J_head_cart_title"><span>            <span class="cs-time-icon J_cart_countDown">15分22秒</span>后购物袋被清空。        </span></p><div id="J-cartList" class="list-team-wrapper ps-container" style="overflow: hidden; position: relative;">        <ul class="list-team-list"><li mars_sead="home_bag_product">                <div class="list-team">                    <a href="" _blank"="" rel="nofollow">                        <img class="list-team-pic" width="47" height="60" src="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/138/466824cc-022b-4cb8-b140-ad9a3b7a569a_235x297_90.jpg" alt="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001">                    </a>                    <p><a href="" _blank"="" title="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001" rel="nofollow">欧米茄(OMEGA)海马系列  男士机械腕表23110392101001</a></p>                    <span class="list-team-size">均码</span>                </div>                <span class="list-team-nub">¥32640<em> Χ 1</em></span>            </li></ul><ul class="list-team-list"></ul>    <div class="ps-scrollbar-x-rail" style="left: 0px; width: 0px; display: none;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; display: none;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>    <div class="list-team-ft">        <span class="oper "><em class="font-tips" id="J_head_cart_num">1</em>件商品配送至 上海,</span>        <span id="J_cart_total" class="">共计：<em class="font-tips rmb-yen">¥</em><em class="font-tips">32640</em></span>        <a href="" home_top_bag_buy"="" target="_blank" rel="nofollow">            <span class="btn btn-acc">去购物车结算</span>        </a>    </div></div></div>
+            </div>
+            <div class="c-logo">
+                <div class="header-logo-dop">
+                    <a target="_blank" href="//www.vip.com/" mars_sead="home_header_vip_logo">
+                        <img src="//b.appsimg.com/2017/08/31/540/1504164551874.png" data-original="//b.appsimg.com/2017/08/31/540/1504164551874.png" alt="全球精选_正品特卖" id="J-vipLogo" height="100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="c-service  header-vip  has-service-operation  is-service-on-right">
+                <a class="c-service-link" href="//support.vip.com/insurance/" mars_sead="home_header_vip1" target="_blank"></a><!--
+ --><a class="c-service-link" href="//help.vip.com/commitment.php" mars_sead="home_header_vip2" target="_blank"></a><!--
+ --><a class="c-service-link" href="//help.vip.com/commitment.php" mars_sead="home_header_vip3" target="_blank"></a>
+                <img class="c-service-img  J-service-img  " src="//b.appsimg.com/2017/08/31/104/1504179372347.png" width="304" height="100" data-original="//b.appsimg.com/2017/08/31/104/1504179372347.png">
+            </div>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <div class="main-nav" id="J_main_nav">
+            <div class="head-inner">
+                <ul class="main-nav-link clearfix" id="J_main_nav_link">
+                    <li class=""><a href="" class="main-nav-atag nav_current menu-item-isbold" mars_sead="home_header_channel_homepage">首页</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_dresses">女装</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_kids">母婴</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_beauty">美妆</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_oversea">国际</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_men">男士</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_household">居家</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_shoes&amp;bags">鞋包</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_sports">运动</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_life">生活</a></li>
+                    <li class="more-wrap J_Navmore_wrap" data-hover="more-wrap-hover">
+                        <a class="main-nav-atag ">更多<i class="ico-dis icon-triangle"></i></a>
+                        <div class="channel-item-group" id="J-channel-item-group">
+                            <div class="channel-item">
+                                <a href="" class="channel-more-itemlink" mars_sead="home_header_channel_watch">
+                                    <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2016/07/04/239/1467620773404.jpg">
+                                    <div class="shadow"></div>
+                                    <div class="brand-text">
+                                        <p class="brand-name-Chinese">配饰</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="channel-item">
+                                <a href="" channel-more-itemlink"="" mars_sead="home_header_channel_lux">
+                                <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2016/07/04/142/1467620841997.jpg">
+                                <div class="shadow"></div>
+                                <div class="brand-text">
+                                    <p class="brand-name-Chinese">唯品·奢</p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="channel-item">
+                                <a href="" channel-more-itemlink"="" mars_sead="home_header_channel_finance">
+                                <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2016/10/17/113/1476702224646.jpg">
+                                <div class="shadow"></div>
+                                <div class="brand-text">
+                                    <p class="brand-name-Chinese">金融</p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="channel-item">
+                                <a href="" channel-more-itemlink"="" mars_sead="home_header_channel_dianshangfupin">
+                                <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2017/09/14/528/1505354197881.png">
+                                <div class="shadow"></div>
+                                <div class="brand-text">
+                                    <p class="brand-name-Chinese">电商扶贫</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-comingsoon">
+                        <a href="" main-nav-atag="" "="" mars_sead="home_header_channel_comingsoon"><img class="link-front-icon J-link-front-icon" src="//b.appsimg.com/2016/08/05/979/1470377501079.png" data-original="//b.appsimg.com/2016/08/05/979/1470377501079.png">预告</a>
+                    </li>
+                    <li class="nav-category">
+                        <a href="" main-nav-atag="" "="" mars_sead="home_header_channel_category"><img class="link-front-icon J-link-front-icon" src="//b.appsimg.com/2016/08/05/229/1470377526197.png" data-original="//b.appsimg.com/2016/08/05/229/1470377526197.png">分类</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="g-row">
+
+    <div class="c-breadcrumbs  J-breadcrumbs">
+        <ul>
+            <li class="c-breadcrumbs-item  c-breadcrumbs-item-title" itemscope="" itemtype="//data-vocabulary.org/Breadcrumb">
+                <span itemprop="title">
+                    <a href="/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3" title="点击查看全部结果">全部结果</a>
+                </span><span class="c-breadcrumbs-separator">&gt;</span>
+            </li>
+            <li class="c-breadcrumbs-item  c-breadcrumbs-item-current" itemscope="" itemtype="//data-vocabulary.org/Breadcrumb">
+                <strong itemprop="title">美特斯邦威男连帽绑带卫衣</strong>
+            </li>
+
+        </ul>
+    </div>
+    <div class="c-filter  J-filter">
+        <div class="c-filter-groups">
+            <div class="c-filter-group  c-filter-group-brand J-brand-filter-group-brand J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">品牌：</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-brand  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-brand-list J-brand-filter-data-list J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="10000601" data-is-selected="0">
+                                <a class="c-filter-brand-link  J-filter-data-link" href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;brand_sn=10000601">
+                                    <img class="c-filter-brand-img  J-filter-brand-img" src="//a.vpimg3.com/upload/brandcool/0/c092ab767b824ad583b9b1086d3c5ee8/10000601/primary.png" data-original="//a.vpimg3.com/upload/brandcool/0/c092ab767b824ad583b9b1086d3c5ee8/10000601/primary.png" alt="美特斯邦威" width="80" height="40" style="display: inline;">
+                                    <div class="c-filter-brand-title">
+                                        美特斯邦威                                        </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-type="brand">确认</button><!--
+                 --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button" mars_sead="classify_morebrand_click">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">男上装</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-category  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-category-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="29974" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;cid_3_show=29974" class="c-filter-category-link">
+                                    卫衣                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group    J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">尺码</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="3957" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=453%3A3957" class="c-filter-property-link">
+                                    S                                        </a>
+                            </li>
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="3958" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=453%3A3958" class="c-filter-property-link">
+                                    M                                        </a>
+                            </li>
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="3959" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=453%3A3959" class="c-filter-property-link">
+                                    L                                        </a>
+                            </li>
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="3960" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=453%3A3960" class="c-filter-property-link">
+                                    XL                                        </a>
+                            </li>
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="4314" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=453%3A4314" class="c-filter-property-link">
+                                    XXL                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="453" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group    J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">适用性别</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="26699" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=1912%3A26699" class="c-filter-property-link">
+                                    男                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="1912" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">面料</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="1439" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=153%3A1439" class="c-filter-property-link">
+                                    棉                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="153" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">版型</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="18058" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=69%3A18058" class="c-filter-property-link">
+                                    常规                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="69" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">厚薄</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="412" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=70%3A412" class="c-filter-property-link">
+                                    常规                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="70" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">弹性</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="416" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=71%3A416" class="c-filter-property-link">
+                                    微弹                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="71" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">适用季节</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="453" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=73%3A453" class="c-filter-property-link">
+                                    秋                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="73" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">领型</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="501" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=77%3A501" class="c-filter-property-link">
+                                    连帽                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="77" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">袖长</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="603" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=83%3A603" class="c-filter-property-link">
+                                    长袖                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="83" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+            <div class="c-filter-group  c-filter-group-more  J-filter-group" data-has-multiple="0" data-is-expanded="0" data-is-multiple="0">
+                <h3 class="c-filter-group-title">衣长</h3>
+                <div class="c-filter-group-content">
+                    <div class="c-filter-group-scroll  c-filter-group-scroll-property  J-filter-group-scroll">
+                        <ul class="c-filter-data-list  c-filter-property-list  J-filter-data-list">
+                            <li class="c-filter-data-item  J-filter-data-item" data-id="18275" data-is-selected="0">
+                                <a href="//category.vip.com/suggest.php?keyword=%E7%BE%8E%E7%89%B9%E6%96%AF%E9%82%A6%E5%A8%81%E7%94%B7%E8%BF%9E%E5%B8%BD%E7%BB%91%E5%B8%A6%E5%8D%AB%E8%A1%A3&amp;props=85%3A18275" class="c-filter-property-link">
+                                    常规                                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-filter-group-commands">
+                    <button class="ui-btn-mini  ui-btn-primary  ui-btn-disable  c-filter-group-button-confirm  J-filter-group-button-confirm" type="button" data-prop="85" data-type="prop">确认</button><!--
+                     --><button class="ui-btn-mini  ui-btn-default  c-filter-group-button-cancel  J-filter-group-button-cancel" type="button">取消</button>
+                </div>
+                <div class="c-filter-group-operation">
+                    <button class="c-filter-group-button-expand  J-filter-group-button-expand" type="button">
+                        更多<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-collapse  J-filter-group-button-collapse" type="button">
+                        收起<span class="vipFont"></span>
+                    </button>
+                    <button class="c-filter-group-button-multiple  J-filter-group-button-multiple" type="button" mars_sead="classify_multiselect_click">
+                        <span class="vipFont"></span>多选
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-filter-commands">
+            <button class="c-filter-button-expand  J-filter-button-expand" type="button" mars_sead="classify_showmoret_click">
+                更多选项<span class="vipFont"></span>
+            </button>
+            <button class="c-filter-button-collapse  J-filter-button-collapse" type="button">
+                点击收起<span class="vipFont"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="c-sortbar">
+        <div class="m-cat-paging ui-paging">
+                    <span class="total">
+                <em class="focus">1</em>/1            </span>
+        </div>
+        <div class="oper-hd-general">
+            <div class="oper-select">
+                <p class="oper-select-txt z-oper-selected-default" id="J_default_sort" data-param="0" mars_sead="te_onsale_filterlist_default" data-ms="te_onsale_filterlist_price_btn|te_onsale_filterlist_x_price_btn">综合</p>
+            </div>
+        </div>
+        <div class="oper-hd-price">
+            <div class="oper-select">
+                <p class="oper-select-txt price-select-txt J_sort_option " title="价格从低到高" id="J_price_sort" data-param="1" mars_sead="te_onsale_filterlist_price_btn" data-ms="te_onsale_filterlist_price_btn|te_onsale_filterlist_x_price_btn">
+                    价格
+                    <i class="price-sort-icon price-desc vipFont"></i>
+                    <i class="price-sort-icon price-asc vipFont"></i>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="oper-hd-time">
+            <div class="oper-select">
+                <p class="oper-select-txt time-select-txt J_sort_option " data-param="3" title="折扣从低到高" id="J_discount_sort">
+                    折扣
+                    <i class="time-sort-icon time-desc vipFont"></i>
+                    <i class="time-sort-icon time-asc vipFont"></i>
+                </p>
+            </div>
+        </div>
+
+        <div class="oper-hd-select" id="J_inputLayout">
+            <div class="oper-select-inner">
+                    <span class="oper-select-star">
+                        <input type="text" placeholder=" ¥" id="J_priceStart">
+                            <em class="cat-select-tips J_placeholder"> ¥</em>
+                    </span>
+                <i class="i-cat-pre"> - </i>
+                <span class="oper-select-end">
+                        <input type="text" placeholder=" ¥" id="J_priceEnd">
+                            <em class="cat-select-tips J_placeholder"> ¥</em>
+                    </span>
+                <i class="i-cat-btn" data-url="" title="确定" id="J_sortSubmit_btn" mars_sead="te_onsale_filterlist_twprice_btn">确定</i>
+            </div>
+        </div>
+
+        <span class="oper-txt-clear hidden" id="J_priceClear" mars_sead="te_onsale_filterlist_twprice_clear_btn">清空</span>
+    </div>
+    <section class="goods-list" id="J_searchCatList"><div class="goods-list-item  c-goods  J_pro_items" id="J_pro_294559985" data-id="294559985" data-brand="1727201" mars_exposure_sead="active_te_goods_expose" mars_exposure_module="pc|products|294559985|1|">        <div class="goods-inner J_item_handle_height">            <div class="goods-slide">                <div class="goods-image">                    <a href="//www.vip.com/detail-1727201-294559985.html" class="goods-image-link" title="" target="_blank">                        <img id="J_pic_294559985" src="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/06/144/0a4ae01d-b516-4e05-9efc-4e1fb4d13999_t.jpg" data-original="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/06/144/0a4ae01d-b516-4e05-9efc-4e1fb4d13999_t.jpg" class="J_img goods-image-img" width="235" height="297" alt="美特斯邦威男连帽绑带卫衣2017冬装新款" style="display: inline;">                                                <div class="goods-cxoprice-tag f-hide" id="J_surpriseSprice_icon294559985"></div>                    </a>                    <p id="J_pms_1727201" class="J_pms_1727201 good-title-pms" title="购物满200减50，满300减100">购物满200减50，满300减100</p>                </div>            </div>                        <div class="goods-info goods-price-info">                <span class="goods-discount ">5.8折</span>                <div class="goods-price-wrapper" id="J_surpriseSprice_wrap294559985" data-price="219" data-tips="" data-original-price-tips="">                    <em class="goods-sells-price"><span class="u-yen  currency-symbol">¥</span><span class="price">219</span></em>                </div>                <del class="goods-market-price "><span class="u-yen currency-symbol">¥</span>379</del>            </div>                        <h4 class="goods-info goods-title-info">                <a target="_blank" href="//www.vip.com/detail-1727201-294559985.html" title="美特斯邦威男连帽绑带卫衣2017冬装新款">                    <span class="goods-brand">美特斯邦威</span>美特斯邦威男连帽绑带卫衣2017冬装新款                </a>            </h4>        </div>    </div>        <div class="goods-list-item  c-goods  J_pro_items" id="J_pro_294560094" data-id="294560094" data-brand="1727201" mars_exposure_sead="active_te_goods_expose" mars_exposure_module="pc|products|294560094|1|">        <div class="goods-inner J_item_handle_height">            <div class="goods-slide">                <div class="goods-image">                    <a href="//www.vip.com/detail-1727201-294560094.html" class="goods-image-link" title="" target="_blank">                        <img id="J_pic_294560094" src="//a.vpimg3.com/upload/merchandise/pdcvis/2017/07/28/172/77f8f278-2207-41b9-9f63-e4d8545ea531_t.jpg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/07/28/172/77f8f278-2207-41b9-9f63-e4d8545ea531_t.jpg" class="J_img goods-image-img" width="235" height="297" alt="美特斯邦威男连帽绑带卫衣2017冬装新款" style="display: inline;">                                                <div class="goods-cxoprice-tag f-hide" id="J_surpriseSprice_icon294560094"></div>                    </a>                    <p id="J_pms_1727201" class="J_pms_1727201 good-title-pms" title="购物满200减50，满300减100">购物满200减50，满300减100</p>                </div>            </div>                        <div class="goods-info goods-price-info">                <span class="goods-discount ">5.8折</span>                <div class="goods-price-wrapper" id="J_surpriseSprice_wrap294560094" data-price="219" data-tips="" data-original-price-tips="">                    <em class="goods-sells-price"><span class="u-yen  currency-symbol">¥</span><span class="price">219</span></em>                </div>                <del class="goods-market-price "><span class="u-yen currency-symbol">¥</span>379</del>            </div>                        <h4 class="goods-info goods-title-info">                <a target="_blank" href="//www.vip.com/detail-1727201-294560094.html" title="美特斯邦威男连帽绑带卫衣2017冬装新款">                    <span class="goods-brand">美特斯邦威</span>美特斯邦威男连帽绑带卫衣2017冬装新款                </a>            </h4>        </div>    </div></section>
+
+    <!-- 分页 预售图模块中使用-->
+    <div class="m-cat-paging cat-paging-all f-clearfix" id="J_pagingCt">
+        <span class="total-item-nums">共1页</span><span class="cat-paging-nub f-paging-default">1</span></div>
+    <!-- 分页 end -->
+
+
+    <div class="m-cat-recom"><!-- 此处为推荐模块，数据推送 --></div>
+</div>
+
+
+<!--底部信息-->
+
+<footer id="footer" class="footer">
+    <div class="footer-inner">
+        <ul class="footer-vip">
+            <li>
+                <i class="footer-vip-ico01">中国第三</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico02">全球直采</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico03">一手货源</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico04">入仓全检</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico05">自营物流</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico06">线下验真</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico07">假货必赔</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico08">任意退货</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico09">万千信赖</i>
+            </li>
+            <li>
+                <i class="footer-vip-ico10">权威荣誉</i>
+            </li>
+        </ul>
+        <div class="footer-list">
+            <dl class="link-anim">
+                <dt>服务保障</dt>
+                <dd>
+                    <a href="//support.vip.com/insurance/" target="_blank" rel="nofollow">正品保证</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/commitment.php" target="_blank" rel="nofollow">7天无理由放心退</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/commitment.php" target="_blank" rel="nofollow">退货返运费</a>
+                </dd>
+                <dd>
+                    <a href="//acs.vip.com/" target="_blank" rel="nofollow">7x15小时客户服务</a>
+                </dd>
+            </dl>
+            <dl class="link-anim">
+                <dt>购物指南</dt>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=308" target="_blank" rel="nofollow">导购演示</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=330" target="_blank" rel="nofollow">订单操作</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=206" target="_blank" rel="nofollow">会员注册</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=329" target="_blank" rel="nofollow">账户管理</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=104" target="_blank" rel="nofollow">收货样品</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?cid=69" target="_blank" rel="nofollow">会员等级</a>
+                </dd>
+            </dl>
+            <dl class="link-anim">
+                <dt>支付方式</dt>
+                <dd>
+                    <a href="//act.vip.com/12284.html" target="_blank" rel="nofollow">快捷支付</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank" rel="nofollow">23家主流网银支付</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?cid=37" target="_blank" rel="nofollow">货到付款</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank" rel="nofollow">支付宝、银联等支付</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank" rel="nofollow">信用卡支付</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=335" target="_blank" rel="nofollow">零钱支付</a>
+                </dd>
+            </dl>
+            <dl class="link-anim">
+                <dt>配送方式</dt>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=345" target="_blank" rel="nofollow">全场满288元免运费</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=345" target="_blank" rel="nofollow">配送范围及运费</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=63" target="_blank" rel="nofollow">验货与签收</a>
+                </dd>
+            </dl>
+            <dl class="link-anim">
+                <dt>售后服务</dt>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?cid=74" target="_blank" rel="nofollow">退货政策</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=236" target="_blank" rel="nofollow">退货流程</a>
+                </dd>
+                <dd>
+                    <a href="//help.vip.com/themelist.php?type=detail&amp;id=317" target="_blank" rel="nofollow">退款方式和时效</a>
+                </dd>
+            </dl>
+            <dl class="tc last">
+                <dt>唯品会APP二维码</dt>
+                <dd>
+                    <img class="lazy" src="//a.vpimg4.com/upload/actpics/xuangou_daily/help/page_bottom_dl_n.png" width="100" height="100" alt="唯品会APP二维码">
+                </dd>
+                <dd>下载唯品会移动APP</dd>
+            </dl>
+        </div>
+        <div class="footer-infor">
+            <p class="footer-infor-link">
+                <a target="_blank" rel="nofollow" href="//support.vip.com/contact/" title="关于我们">关于我们</a>|
+                <a target="_blank" rel="nofollow" href="//support.vip.com/contact/?act=en" title="About us">About us</a>|
+                <a target="_blank" rel="nofollow" href="http://ir.vip.com/" title="Investor Relations">Investor Relations</a>|
+                <a target="_blank" rel="nofollow" href="//comm.vip.com/media/" title="媒体报道">媒体报道</a>|
+                <a target="_blank" rel="nofollow" href="//vis.vip.com/stipulate/" title="品牌招商">品牌招商</a>|
+                <a target="_blank" rel="nofollow" href="//support.vip.com/privacy/" title="隐私条款">隐私条款</a>|
+                <a target="_blank" rel="nofollow" href="http://job.vip.com" title="唯品诚聘">唯品诚聘</a>|
+                <a target="_blank" rel="nofollow" href="//support.vip.com/foundation/" title="365爱心基金">365爱心基金</a>|
+                <a target="_blank" rel="nofollow" href="//vipcard.vip.com" title="唯品卡">唯品卡</a>|
+                <a target="_blank" href="//support.vip.com/contact/index.php?act=us" title="联系我们">联系我们</a>
+            </p>
+            <p class="footer-infor-txt">
+                Copyright © 2008-2017 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受<a rel="nofollow" href="//support.vip.com/clause/">唯品会用户协议</a>。版权所有 <a rel="nofollow" href="//www.vip.com/">广州唯品会信息科技有限公司</a><br><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010302111111" target="_blank"><img src="//a.vpimg4.com/upload/actpics/act/sp/police_icon.png" width="14" height="14" style="margin:2px 3px 0 0;">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a rel="nofollow" href="http://www.miibeian.gov.cn/publish/query/indexFirst.action">粤ICP备08114786号</a> <a rel="nofollow" href="http://www.miibeian.gov.cn">ICP经营许可证：粤B2-20080329 </a><a rel="nofollow" href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/61e6abe320e7462baf61aab32a67f256">网络文化经营许可证：粤网文〔2015〕1528-229</a><br><a rel="nofollow" href="//act.vip.com/33543.html">自营主体经营证照</a>&nbsp;&nbsp;<a href="//help.vip.com/themelist.php?type=detail&amp;id=475" target="_blank" rel="nofollow">风险监测信息</a>&nbsp;&nbsp;<a rel="nofollow" href="//act.vip.com/34944.html">互联网药品交易服务资格证（粤C20140002）</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer-ft">
+        <p class="footer-pic">
+            <a rel="nofollow" target="_blank" href="http://online.unionpay.com/">
+                <i class="footer-pic-ico01" title="银联特约商户"></i>
+            </a>
+            <a rel="nofollow" target="_blank" href="//weiquan.vip.com">
+                <i class="footer-pic-ico04" title="消费维权服务站"></i>
+            </a>
+            <a rel="nofollow" target="_blank" href="http://netadreg.gzaic.gov.cn/ntmm/WebSear/WebLogoPub.aspx?logo=440103103022008082200055">
+                <i class="footer-pic-ico05" title="红盾电子链接标识"></i>
+            </a>
+            <a rel="nofollow" target="_blank" href="http://www.gzjd.gov.cn/">
+                <i class="footer-pic-ico06" title="网络警察报警平台"></i>
+            </a>
+            <a rel="nofollow" target="_blank" href="http://www.weibo.com/u/2931161010?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_hot=1">
+                <i class="footer-pic-ico07" title="公安局网络警察支队"></i>
+            </a>
+            <a rel="nofollow" target="_blank" href="http://credit.szfw.org/CX20160725023666090470.html" id="___szfw_logo___">
+                <i class="footer-pic-ico09" title="诚信网站"></i>
+            </a>
+            <a rel="nofollow" target="_blank" href="http://ss.knet.cn/verifyseal.dll?sn=2011022400100006603&amp;ct=df&amp;a=1&amp;pa=0.801643806276843">
+                <i class="footer-pic-ico10" title="可信网站"></i>
+            </a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

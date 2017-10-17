@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vip | 商品列表</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/lists.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<header id="vip-common-header" class="header vip-common-header clearfix ">
+    <nav class="top-nav">
+        <div id="J_top_nav" class="head-inner">
+            <div class="sel-area">
+                <div class="sel-area-change" id="J_areaSelect_btn" mars_sead="home_header_location">
+                    <div class="sel-area-btn"><span id="J_selected_province" class="sel-province">上海</span><i class="ico-dis"></i></div>
+                    <div class="sel-area-box" id="J_area_content"><div class="sel-area-box-inner" id="J-areaBinner">  <i class="ico-arw-bodder" style="width: 85px;"></i>  <p class="sab-tit">请选择所在的收货地区</p>  <table class="sab-table" mars_sead="home_top_zone_link"><tbody><tr>      <th>A</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103104">安徽</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104108">澳门</span></td>    </tr><tr>      <th>B</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101101">北京</span></td>    </tr><tr>      <th>C</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105100">重庆</span></td>    </tr><tr>      <th>F</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="103105">福建</span></td>    </tr><tr>      <th>G</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104104">广东</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104105">广西</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105102">贵州</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106102">甘肃</span></td>    </tr><tr>      <th>H</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101103">河北</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="104101">河南</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="102103">黑龙江</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104106">海南</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="104102">湖北</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="104103">湖南</span></td>    </tr><tr>      <th>J</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103102">江苏</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="102102">吉林</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="103106">江西</span></td>    </tr><tr>      <th>L</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="102101">辽宁</span></td>    </tr><tr>      <th>N</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101105">内蒙古</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106104">宁夏</span></td>    </tr><tr>      <th>Q</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106103">青海</span></td>    </tr><tr>      <th>S</th>      <td><span class="J_select_item selected" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103101">上海</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103107">山东</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101104">山西</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105101">四川</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_HZ" data-id="106101">陕西</span></td>    </tr><tr>      <th>T</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104109">台湾</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_BJ" data-id="101102">天津</span></td>    </tr><tr>      <th>X</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105104">西藏</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_NH" data-id="104107">香港</span><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="106105">新疆</span></td>    </tr><tr>      <th>Y</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_CD" data-id="105103">云南</span></td>    </tr><tr>      <th>Z</th>      <td><span class="J_select_item" mars_sead="te_home_head_diqu_link" data-wh="VIP_SH" data-id="103103">浙江</span></td>    </tr>  </tbody></table></div></div>
+                </div>
+            </div>
+            <ul class="top-nav-tool f-top-login-after" id="J-topNavTool">
+                <li class="wp-my">
+                    <ul id="J_head_log" class="login-before login_after">
+                        <li class="wp-user" data-hover="wp-user-hover" id="J-wp-user">
+        <span class="user-in" id="J_user_logined">
+            <a id="J_viplevel" href="" target="_blank" class="user-in-vip"><i class="uv-1"></i></a>
+            <a href="" _blank" class="user-in-name">admin </a>
+            <i class="ico-dis"></i>
+        </span>
+                            <p class="hidden top-nav-inf" id="J_user_unLogin">
+            <span class="top-nav-inf-pc">
+                <a href="login.html" home_top_nav2_login" class="J_header_lnkLogin" rel="nofollow">
+                <em class="name">{$J_header_account}</em><span class="u-name-slash">/</span> 请登录
+                </a>
+                <i class="ico-dis"></i>
+            </span>
+                            </p>
+                            <span class="hidden user-noid" id="J_user_noId">
+            <a href="login.html"home_top_nav2_login" class="J_header_lnkLogin" rel="nofollow">请登录</a>
+        </span>
+
+                            <div class="top-nav-dis user-infor user-login-ed" id="J_userInfo">
+                                <i class="ico-arw-bodder" id="J-ico-arw-bodder" style="width: 125px;"></i>
+                                <div class="top-nav-inf clearfix">
+                                    <span class="top-nav-pic-avater"></span>
+                                    <div class="top-nav-pic-infs">
+                                        <p id="J_uInfo_name"><a href="" home_top_nav2_login" class="J_header_lnkLogin" rel="nofollow"><span id="J_uInfo_welcom">欢迎回来</span> <span class="top-nav-login">[请登录]</span></a>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="top-nav-pic clearfix">
+                                    <a class="top-nav-pic-avater" mars_sead="top_nav2_log_my2" id="J_topNavUserAvatar" href="//myi.vip.com/index.html" target="_blank"></a>
+                                    <div class="top-nav-pic-infs">
+                                        <a href="" _blank" id="J_nPic_name" class="top-nav-nickname" mars_sead="top_nav2_log_my">admin</a>
+                                        <a href="" top-nav-logout" id="J_header_lnkLogOut" mars_sead="home_top_nav2_log_logout">[退出]</a>
+                                    </div>
+                                </div>
+                                <p class="top-nav-list"><span>
+                    <a href="" home_top_nav2_log_order" target="_blank">我的订单
+                        <i id="J-header-myOrder" class="top-nav-order-num"></i>
+                    </a>
+                </span></p>
+                            </div>
+                        </li>
+                        <li id="J_Register_hasnoname" class="register_hasnoname hidden">
+                            <a href="" home_top_nav2_reg" class="i-link J_header_lnkRegister" rel="nofollow">注册</a>  </li>
+                    </ul>
+                </li>
+
+                <li class="wp-order" data-hover="wp-order-hover">
+                    <span class="order-in">
+                        <a href="" home_top_nav2_order" target="_blank" rel="nofollow">我的订单</a>
+                    </span>
+                </li>
+                <li class="wp-service wp-fav-nav" data-hover="wp-fav-nav-hover" id="J-favs">
+                    <span class="service-in">
+                        <a href="" _blank" mars_sead="home_top_nav2_collect" rel="nofollow">我的特卖</a>
+                    </span>
+                </li>
+
+                <li class="wp-service" data-hover="wp-service-hover">
+                    <span class="service-in">
+                        客户服务
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="head-logo">
+        <div class="head-inner  clearfix" id="J-head-inner-def">
+           
+            <div class="c-logo">
+                <div class="header-logo-dop">
+                    <a target="_blank" href="//www.vip.com/" mars_sead="home_header_vip_logo">
+                        <img src="//b.appsimg.com/2017/08/31/540/1504164551874.png" data-original="//b.appsimg.com/2017/08/31/540/1504164551874.png" alt="全球精选_正品特卖" id="J-vipLogo" height="100">
+                    </a>
+                </div>
+            </div>
+
+            <div class="c-service  header-vip  has-service-operation  is-service-on-right">
+                <a class="c-service-link" href="//support.vip.com/insurance/" mars_sead="home_header_vip1" target="_blank"></a><!--
+ --><a class="c-service-link" href="//help.vip.com/commitment.php" mars_sead="home_header_vip2" target="_blank"></a><!--
+ --><a class="c-service-link" href="//help.vip.com/commitment.php" mars_sead="home_header_vip3" target="_blank"></a>
+                <img class="c-service-img  J-service-img  " src="//b.appsimg.com/2017/08/31/104/1504179372347.png" width="304" height="100" data-original="//b.appsimg.com/2017/08/31/104/1504179372347.png">
+            </div>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <div class="main-nav" id="J_main_nav">
+            <div class="head-inner">
+                <ul class="main-nav-link clearfix" id="J_main_nav_link">
+                    <li class=""><a href="" class="main-nav-atag nav_current menu-item-isbold" mars_sead="home_header_channel_homepage">首页</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_dresses">女装</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_kids">母婴</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_beauty">美妆</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_oversea">国际</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_men">男士</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_household">居家</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_shoes&amp;bags">鞋包</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_sports">运动</a></li>
+                    <li class=""><a href="" class="main-nav-atag " mars_sead="home_header_channel_life">生活</a></li>
+                    <li class="more-wrap J_Navmore_wrap" data-hover="more-wrap-hover">
+                        <a class="main-nav-atag ">更多<i class="ico-dis icon-triangle"></i></a>
+                        <div class="channel-item-group" id="J-channel-item-group">
+                            <div class="channel-item">
+                                <a href="" class="channel-more-itemlink" mars_sead="home_header_channel_watch">
+                                    <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2016/07/04/239/1467620773404.jpg">
+                                    <div class="shadow"></div>
+                                    <div class="brand-text">
+                                        <p class="brand-name-Chinese">配饰</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="channel-item">
+                                <a href="" channel-more-itemlink"="" mars_sead="home_header_channel_lux">
+                                <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2016/07/04/142/1467620841997.jpg">
+                                <div class="shadow"></div>
+                                <div class="brand-text">
+                                    <p class="brand-name-Chinese">唯品·奢</p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="channel-item">
+                                <a href="" channel-more-itemlink"="" mars_sead="home_header_channel_finance">
+                                <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2016/10/17/113/1476702224646.jpg">
+                                <div class="shadow"></div>
+                                <div class="brand-text">
+                                    <p class="brand-name-Chinese">金融</p>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="channel-item">
+                                <a href="" channel-more-itemlink"="" mars_sead="home_header_channel_dianshangfupin">
+                                <img width="170" height="96" src="//s2.vipstatic.com/img/share/blank.png" class="J_subNav_pics lazy" data-original="//b.appsimg.com/2017/09/14/528/1505354197881.png">
+                                <div class="shadow"></div>
+                                <div class="brand-text">
+                                    <p class="brand-name-Chinese">电商扶贫</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-comingsoon">
+                        <a href="" main-nav-atag="" "="" mars_sead="home_header_channel_comingsoon"><img class="link-front-icon J-link-front-icon" src="//b.appsimg.com/2016/08/05/979/1470377501079.png" data-original="//b.appsimg.com/2016/08/05/979/1470377501079.png">预告</a>
+                    </li>
+                    <li class="nav-category">
+                        <a href="" main-nav-atag="" "="" mars_sead="home_header_channel_category"><img class="link-front-icon J-link-front-icon" src="//b.appsimg.com/2016/08/05/229/1470377526197.png" data-original="//b.appsimg.com/2016/08/05/229/1470377526197.png">分类</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--内容区域-->
+<div class="wrap_content" id="J_display_wrap">
+    <div class="pro-list-fav" id="J_pro_list_fav">
+        <!-- 普通列表页品牌栏 -->
+        <dl class="pro-fav-name">
+            <dt>欧米茄OMEGA手表专场</dt>
+            <dd class="">
+                <span class="salebg2">7</span>折起    </dd>
+        </dl>
+
+        <div class="oper-topmore-item">
+            <dl class="oper-topmore-team J-class J-floatCgTopWrap">
+                <dt class="oper-topmore-tit">
+                    <span class="J-floatCgTopContName">全部分类</span><i class="i-cat-dis vipFont trans200"></i>
+                </dt>
+                <dd class="oper-topmore-cnt J-topmore-cnt">
+                    <div class="oper-topmore-inner J-ctHeight">
+                        <div class="J_content topmore-content J-floatCgTopCont"><a href="" J-secondLink J-fCategory0 sig-secluded" mars_sead="te_list_top_sort">    全部分类<span class="hidden">()</span></a><a href="" J-secondLink J-fCategory32963" mars_sead="te_list_top_sort">    机械男表<span class="">(33)</span></a><a href="" J-secondLink J-fCategory32964" mars_sead="te_list_top_sort">    机械女表<span class="">(10)</span></a></div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- 多功能区 @todo-->
+    <div class="pro_choose" id="J_fileter_outFrame">
+        <div class="pro_cover"></div>
+        <a name="J_fileter_position"></a>
+        <div id="J_fileter_frame">
+            <!-- 分类区 -->
+            <div class="pro_search">
+                <dl class="pro-sortbar-all pro-sortbar-category clearfix J-class" id="J-categoryWrap">
+                    <dt class="pro-sortbar-name">分类：</dt>
+                    <dd class="pro-sortbar-cnt">
+                        <ul class="pro-sortbar-choice list-category J-ctHeight" id="J-categoryCont"><li class="list-cat-items J-lis-cat-items ">    <a href="" J-category0" mars_sead="" title="全部分类" class="J-secondLink  J_fake_a cat-items-link pro_selected">        <span class="cat-items-name">全部分类</span>        <em class="cat-items-num hidden">()</em>        <span class="cat-arrow-up">            <i class="vipFont"></i>        </span>        <span class="cat-arrow-down">            <i class="vipFont"></i>        </span>    </a>    <div class="drop-cat-poup J-third-catpoup">        <i class="bding J-cat-bding"></i></div></li><li class="list-cat-items J-lis-cat-items ">    <a href="" J-category32963" mars_sead="" title="机械男表" class="J-secondLink  J_fake_a cat-items-link ">        <span class="cat-items-name">机械男表</span>        <em class="cat-items-num ">(33)</em>        <span class="cat-arrow-up">            <i class="vipFont"></i>        </span>        <span class="cat-arrow-down">            <i class="vipFont"></i>        </span>    </a>    <div class="drop-cat-poup J-third-catpoup">        <i class="bding J-cat-bding"></i></div></li><li class="list-cat-items J-lis-cat-items ">    <a href="" J-category32964" mars_sead="" title="机械女表" class="J-secondLink  J_fake_a cat-items-link ">        <span class="cat-items-name">机械女表</span>        <em class="cat-items-num ">(10)</em>        <span class="cat-arrow-up">            <i class="vipFont"></i>        </span>        <span class="cat-arrow-down">            <i class="vipFont"></i>        </span>    </a>    <div class="drop-cat-poup J-third-catpoup">        <i class="bding J-cat-bding"></i></div></li></ul>
+
+                    </dd>
+                </dl>
+                <dl class="pro-sortbar-all fn-ov-hidden clearfix J-class" id="J-cSizesWrap" style="height: 50px;"><dt class="pro-sortbar-name">尺码：</dt>    <dd class="pro-sortbar-cnt">    <ul class="pro-sortbar-choice J-ctHeight"><li>                <a class="J-size-item pro_selected" href="/1730611.html?q=|0||0|0|1&amp;ff=6|11|1|4" id="J-size" data-index="0" data-size-name="全部尺码" mars_sead="te_list_main_size">全部尺码</a>        </li><li>                <a class="J-size-item" href="/1730611.html?q=|0||0|0|1&amp;ff=6|11|1|4" id="J-size" data-index="1" data-size-name="均码" mars_sead="te_list_main_size">均码</a>        </li>    </ul>    <div class="pro-sortbar-oper">        <span class="cat-more-dis hidden J-moreDis">            更多<i class="vipFont"></i>        </span>        <span class="cat-more-dwon J-moreDwon">            收起<i class="vipFont"></i>        </span>    </div>    </dd></dl>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="J-categoryContTpl">
+        {#list}
+        <li class='list-cat-items J-lis-cat-items {$FpositionCls}'>
+            <a href="" J-category{$elemId}" mars_sead="{$ms}" title="{$name}" class="J-secondLink {$cls} J_fake_a cat-items-link {$positionCls}">
+                <span class="cat-items-name">{$name}</span>
+                <em class="cat-items-num {$hideNums}">({$total})</em>
+                <span class="cat-arrow-up">
+            <i class="vipFont">&#xe616;</i>
+        </span>
+                <span class="cat-arrow-down">
+            <i class="vipFont">&#xe615;</i>
+        </span>
+            </a>
+            <div class="drop-cat-poup J-third-catpoup">
+                <i class="bding J-cat-bding"></i>
+                {#children}
+                <a href="" J-thirdLink" id="J-thirdLink-{$id}">{$name}({$total})</a>
+                {#/children}
+            </div>
+        </li>
+        {#/list}
+    </script>
+
+    <script type="text/html" id="J-cSizesTpl">
+        <dt class="pro-sortbar-name">尺码：</dt>
+        <dd class="pro-sortbar-cnt">
+            <ul class="pro-sortbar-choice J-ctHeight">
+                {#sizes}
+                <li>
+                    <a class="J-size-item" href="{$link}" id="J-size{$id}" data-index="{$index}" data-size-name="{$display_name}" mars_sead="te_list_main_size">{$display_name}</a>
+                </li>
+                {#/sizes}
+            </ul>
+            <div class="pro-sortbar-oper">
+        <span class="cat-more-dis hidden J-moreDis">
+            更多<i class="vipFont">&#xe616;</i>
+        </span>
+                <span class="cat-more-dwon J-moreDwon">
+            收起<i class="vipFont">&#xe615;</i>
+        </span>
+            </div>
+        </dd>
+    </script>
+    <!-- 筛选区 -->
+    <div class="pro-list-oper clearfix" id="J-pro-list-fix">
+        <div class="pro-oper" id="J-proOper"><div class="oper-hd-general J_oper_tag z-oper-current-selected" title="综合" id="J-operAll-hd" mars_sead="te_list_sort_default">    <div class="oper-hd-all ">        <p>综合</p>    </div>    </div><div class="oper-hd-price J_oper_tag " id="J-operPrice-hd" mars_sead="te_list_sort_price">    <div class="oper-price-tc " title="价格由低到高">        <p class="oper-price-txt">            <em>价格</em></p>    </div>    </div><div class="oper-hd-discot J_oper_tag " title="折扣由低到高" id="J-operdiscount-hd" mars_sead="te_list_sort_discount">    <p class="oper-discount-txt">        <em>折扣</em></p>    </div><div id="J-have-selected" class="J-select-stock oper-hd-hastock ">    <p>        <a href="" J_fileter_hasStock" class="J-link" mars_sead="te_list_hastock">            <span class="ui-checkbox">                <input type="checkbox" class="ui-checkbox-normal">                <label for="item1-1" class="ui-checkbox-simulation"></label>            </span>            只看有货商品        </a>    </p>    </div></div>
+        <div id="J_page_special" class="page pro-paging"><span class="page-total"><em class="page-nub">43</em>件商品</span><span><em class="page-nub">1</em>/1</span><span class="page-pre">&lt;</span><span class="page-next"><i>&gt;</i></span></div>
+    </div>
+    <!-- 筛选区 end -->
+    <script type="text/html" id="J-proOperTpl">
+        {#mixq}
+        <div class="oper-hd-general J_oper_tag {$statusCls}" title="{$title}" id="J-operAll-hd" mars_sead="te_list_sort_default">
+            <div class="oper-hd-all ">
+                <p>{$name}</p>
+            </div>
+        </div>
+        {#/mixq}
+
+        {#price}
+        <div class="oper-hd-price J_oper_tag " id="J-operPrice-hd" mars_sead="te_list_sort_price">
+            <div class="oper-price-tc {$statusCls}" title="{$title}">
+                <p class="oper-price-txt">
+                    <em>{$name}</em><span class="db-arrow-change"><i class="vipFont i-cat-dis i-cat-dis-down">&#xe616;</i><i class="vipFont i-cat-dis i-cat-dis-up">&#xe615;</i></span>
+                </p>
+
+            </div>
+        </div>
+        {#/price}
+
+        {#discount}
+        <div class="oper-hd-discot J_oper_tag {$statusCls}" title="{$title}" id="J-operdiscount-hd" mars_sead="te_list_sort_discount">
+            <p class="oper-discount-txt">
+                <em>{$name}</em><span class="db-arrow-change"><i class="vipFont i-cat-dis i-cat-dis-down">&#xe616;</i><i class="vipFont i-cat-dis i-cat-dis-up">&#xe615;</i></span>
+            </p>
+
+        </div>
+        {#/discount}
+        {#hasStock}
+        <div id="J-have-selected" class="J-select-stock oper-hd-hastock {$statusCls}">
+            <p>
+                <a href="" J_fileter_hasStock" class="J-link" mars_sead="te_list_hastock">
+            <span class="ui-checkbox">
+                <input type="checkbox" {$checked} class="ui-checkbox-normal">
+                <label for="item1-1" class="ui-checkbox-simulation"></label>
+            </span>
+                    只看有货商品
+                </a>
+            </p>
+        </div>
+        {#/hasStock}
+    </script>
+
+
+    <div class="c-goods-list">
+        <div id="J_wrap_pro_add" class="c-goods-list-inner">
+            <div class="goods-list-item c-goods J_pro_items has-goods-slide" data-show-thumb="1" id="J_pro_302792251" data-id="302792251" mars_exposure_sead="active_te_resource_expose" mars_exposure_module="pc|products|302792251|1|1">            <div class="goods-inner">                <div class="goods-slide J_item_mouseout_warp">                    <div class="goods-image">                        <a href="" goods-image-link" title="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001" mars_sead="te_list_list_img1" target="_blank">                            <img class="J_img" id="J_normal302792251" src="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/138/466824cc-022b-4cb8-b140-ad9a3b7a569a_235x297_90.jpg" width="235" height="297" alt="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001" data-original="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/138/466824cc-022b-4cb8-b140-ad9a3b7a569a_235x297_90.jpg" data-img-side="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/190/7d1ed27c-78ce-45ac-ad1d-d114a96bb4a3_235x297_90.jpg" data-img-back="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/68/67fe3142-d777-4818-ae26-ef59115b8c53_235x297_90.jpg" data-img-side-s="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/190/7d1ed27c-78ce-45ac-ad1d-d114a96bb4a3_54x69_100.jpg" data-img-back-s="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/68/67fe3142-d777-4818-ae26-ef59115b8c53_54x69_100.jpg" data-detail-url="//www.vip.com/detail-1730611-302792251.html" style="display: inline;">                            <div class="goods-business-tag J_businessTag f-hide" id="J_surpriseSprice_icon302792251">                                <img class="" src="" alt="" width="45" height="45">                                <img class="hidden" src="" alt="" width="53" height="53">                            </div>                                                        <div class="goods-corner-tag J_businessTag" id="J_cornerTag302792251"></div>                                                        <div class="prepay-item-tag J_businessTag f-hide">预定</div>                                            </a>                    </div>                    <div class="goods-images J_thumbWrap">
+                <div class="J_goodsThumb goods-thumb J_defThumb is-goods-thumb-current" data-img-type="5">
+                    <a href="item_lists.html" goods-thumb-link">
+                        <img class="" src="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/138/466824cc-022b-4cb8-b140-ad9a3b7a569a_235x297_90.jpg" data-original="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/138/466824cc-022b-4cb8-b140-ad9a3b7a569a_235x297_90.jpg" width="54" height="69" alt="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001">
+                    </a>
+                </div>
+
+                <div class="J_goodsThumb goods-thumb" data-img-type="7">
+                    <a href="item_lists.html" goods-thumb-link">
+                        <img class="" src="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/68/67fe3142-d777-4818-ae26-ef59115b8c53_54x69_100.jpg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/68/67fe3142-d777-4818-ae26-ef59115b8c53_54x69_100.jpg" width="54" height="69" alt="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001">
+                    </a>
+                </div>
+
+                <div class="J_goodsThumb goods-thumb" data-img-type="3">
+                    <a href="item_lists.html" goods-thumb-link">
+                        <img class="" src="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/190/7d1ed27c-78ce-45ac-ad1d-d114a96bb4a3_54x69_100.jpg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/190/7d1ed27c-78ce-45ac-ad1d-d114a96bb4a3_54x69_100.jpg" width="54" height="69" alt="欧米茄(OMEGA)海马系列  男士机械腕表23110392101001">
+                    </a>
+                </div>
+            </div>                </div><div class="goods-info  goods-price-info  ">                    <span class="goods-discount">8折</span>					<div class="goods-price-wrapper J_surpriseSprice_wrap18653885290815502 " id="J_surpriseSprice_wrap" data-price="32640" data-tips="" data-original-price-tips="">	                    <em class="goods-sells-price ">							<span class="u-yen currency-symbol">¥</span><!--                             --><span class="price">32640</span>							<span class="price-from"></span>						</em></div>                    <del class="goods-market-price ">						<span class="u-yen  currency-symbol">¥</span><!--                         -->40800					</del>                </div><div class="goods-info  prepay-promo-info  f-hide">                    <span class="goods-promo-price"></span>                </div>                                <h4 class="goods-info  goods-title-info">                    <a href="" 欧米茄(OMEGA)海马系列  男士机械腕表23110392101001" mars_sead="te_list_list_name1" target="_blank">&nbsp;欧米茄(OMEGA)海马系列  男士机械腕表23110392101001</a>                </h4>                                <div class="goods-info  goods-membership-benefits-info" id="J_list_warm_mprice_con_302792251" data-ismp=""></div>            </div>        </div><div class="goods-list-item c-goods J_pro_items has-goods-slide" data-show-thumb="1" id="J_pro_302792259" data-id="302792259" mars_exposure_sead="active_te_resource_expose" mars_exposure_module="pc|products|302792259|1|2">            <div class="goods-inner">                <div class="goods-slide J_item_mouseout_warp">                    <div class="goods-image">                        <a href="" goods-image-link" title="欧米茄(OMEGA)海马系列  男士机械腕表21230412001003" mars_sead="te_list_list_img2" target="_blank">                            <img class="J_img" id="J_normal302792259" src="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/20/176/d2d461a5-e532-4281-b13a-fce8dbb30c3b_235x297_90.jpg" width="235" height="297" alt="欧米茄(OMEGA)海马系列  男士机械腕表21230412001003" data-original="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/20/176/d2d461a5-e532-4281-b13a-fce8dbb30c3b_235x297_90.jpg" data-img-side="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/178/26031305-2f58-49c4-9f39-c2539e1eb7ba_235x297_90.jpg" data-img-back="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/79/a5eafa01-fe72-412e-b1d0-a0acce7b30ae_235x297_90.jpg" data-img-side-s="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/178/26031305-2f58-49c4-9f39-c2539e1eb7ba_54x69_100.jpg" data-img-back-s="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/79/a5eafa01-fe72-412e-b1d0-a0acce7b30ae_54x69_100.jpg" data-detail-url="//www.vip.com/detail-1730611-302792259.html" style="display: inline;">                            <div class="goods-business-tag J_businessTag f-hide" id="J_surpriseSprice_icon302792259">                                <img class="" src="" alt="" width="45" height="45">                                <img class="hidden" src="" alt="" width="53" height="53">                            </div>                                                        <div class="goods-corner-tag J_businessTag" id="J_cornerTag302792259"></div>                                                        <div class="prepay-item-tag J_businessTag f-hide">预定</div>                                            </a>                    </div>                    <div class="goods-images J_thumbWrap">
+            <div class="J_goodsThumb goods-thumb J_defThumb is-goods-thumb-current" data-img-type="5">
+                <a href="" goods-thumb-link">
+                    <img class="" src="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/20/176/d2d461a5-e532-4281-b13a-fce8dbb30c3b_235x297_90.jpg" data-original="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/20/176/d2d461a5-e532-4281-b13a-fce8dbb30c3b_235x297_90.jpg" width="54" height="69" alt="欧米茄(OMEGA)海马系列  男士机械腕表21230412001003">
+                </a>
+            </div>
+
+            <div class="J_goodsThumb goods-thumb" data-img-type="7">
+                <a href="" goods-thumb-link">
+                    <img class="" src="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/79/a5eafa01-fe72-412e-b1d0-a0acce7b30ae_54x69_100.jpg" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/79/a5eafa01-fe72-412e-b1d0-a0acce7b30ae_54x69_100.jpg" width="54" height="69" alt="欧米茄(OMEGA)海马系列  男士机械腕表21230412001003">
+                </a>
+            </div>
+
+            <div class="J_goodsThumb goods-thumb" data-img-type="3">
+                <a href="" goods-thumb-link">
+                    <img class="" src="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/178/26031305-2f58-49c4-9f39-c2539e1eb7ba_54x69_100.jpg" data-original="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/178/26031305-2f58-49c4-9f39-c2539e1eb7ba_54x69_100.jpg" width="54" height="69" alt="欧米茄(OMEGA)海马系列  男士机械腕表21230412001003">
+                </a>
+            </div>
+        </div>                </div>
+
+
+            <div class="goods-info  goods-price-info  ">                    <span class="goods-discount">9.8折</span>					<div class="goods-price-wrapper J_surpriseSprice_wrap2891286595018759 " id="J_surpriseSprice_wrap" data-price="31752" data-tips="" data-original-price-tips="">	                    <em class="goods-sells-price ">							<span class="u-yen currency-symbol">¥</span><!--                             --><span class="price">31752</span>							<span class="price-from"></span>						</em></div>                    <del class="goods-market-price ">						<span class="u-yen  currency-symbol">¥</span><!--                         -->32400					</del>                </div><div class="goods-info  prepay-promo-info  f-hide">                    <span class="goods-promo-price"></span>                </div>                                <h4 class="goods-info  goods-title-info">                    <a href="" 欧米茄(OMEGA)海马系列  男士机械腕表21230412001003" mars_sead="te_list_list_name2" target="_blank">&nbsp;欧米茄(OMEGA)海马系列  男士机械腕表21230412001003</a>                </h4>                                <div class="goods-info  goods-membership-benefits-info" id="J_list_warm_mprice_con_302792259" data-ismp=""></div>            </div>        </div><div class="goods-list-item c-goods J_pro_items has-goods-slide " data-show-thumb="1" id="J_pro_304049812" data-id="304049812" mars_exposure_sead="active_te_resource_expose" mars_exposure_module="pc|products|304049812|1|3">            <div class="goods-inner">                <div class="goods-slide J_item_mouseout_warp">                    <div class="goods-image">                        <a href="" goods-image-link" title="欧米茄（Omega）海马系列 自动机械男士腕表231.10.42.21.01.006" mars_sead="te_list_list_img3" target="_blank">                            <img class="J_img" id="J_normal304049812" src="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/30/43/382d0651-8e04-4f95-b5a8-cd6a0bbc3195_t_235x297_90.jpg" width="235" height="297" alt="欧米茄（Omega）海马系列 自动机械男士腕表231.10.42.21.01.006" data-original="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/30/43/382d0651-8e04-4f95-b5a8-cd6a0bbc3195_t_235x297_90.jpg" data-img-side="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/30/76/b8d9a87b-7c58-4621-b5df-ee8c5b3949d8_235x297_90.jpg" data-img-back="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/30/92/247a3b6f-6137-434c-b2a0-041bb2deb5ed_t_235x297_90.jpg" data-img-side-s="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/30/76/b8d9a87b-7c58-4621-b5df-ee8c5b3949d8_54x69_100.jpg" data-img-back-s="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/30/92/247a3b6f-6137-434c-b2a0-041bb2deb5ed_t_54x69_100.jpg" data-detail-url="//www.vip.com/detail-1730611-304049812.html" style="display: inline;">                            <div class="goods-business-tag J_businessTag " id="J_surpriseSprice_icon304049812">                                <img class="" src="//a.vpimg4.com/upload/category/2017/04/25/120/af399b57-080a-4a59-aee7-1babe696f08a.png" alt="" width="45" height="45">                                <img class="hidden" src="" alt="" width="53" height="53">                            </div>                                                        <div class="goods-corner-tag J_businessTag" id="J_cornerTag304049812"></div>                                                        <div class="prepay-item-tag J_businessTag f-hide">预定</div>                                            </a>                    </div>                    <div class="goods-images J_thumbWrap">                    </div>                </div><div class="goods-info  goods-price-info  ">                    <span class="goods-discount">9.8折</span>					<div class="goods-price-wrapper J_surpriseSprice_wrap441710778884751364 " id="J_surpriseSprice_wrap" data-price="44786" data-tips="" data-original-price-tips="">	                    <em class="goods-sells-price ">							<span class="u-yen currency-symbol">¥</span><!--                             --><span class="price">44786</span>							<span class="price-from"></span>						</em></div>                    <del class="goods-market-price ">						<span class="u-yen  currency-symbol">¥</span><!--                         -->45700					</del>                </div><div class="goods-info  prepay-promo-info  f-hide">                    <span class="goods-promo-price"></span>                </div>                                <h4 class="goods-info  goods-title-info">                    <a href="" 欧米茄（Omega）海马系列 自动机械男士腕表231.10.42.21.01.006" mars_sead="te_list_list_name3" target="_blank">&nbsp;欧米茄（Omega）海马系列 自动机械男士腕表231.10.42.21.01.006</a>                </h4>                                <div class="goods-info  goods-membership-benefits-info" id="J_list_warm_mprice_con_304049812" data-ismp=""></div>            </div>        </div><div class="goods-list-item c-goods J_pro_items has-goods-slide " data-show-thumb="1" id="J_pro_302792274" data-id="302792274" mars_exposure_sead="active_te_resource_expose" mars_exposure_module="pc|products|302792274|1|4">            <div class="goods-inner">                <div class="goods-slide J_item_mouseout_warp">                    <div class="goods-image">                        <a href="" goods-image-link" title="欧米茄(OMEGA)星座系列  男士机械腕表12320352002004" mars_sead="te_list_list_img4" target="_blank">                            <img class="J_img" id="J_normal302792274" src="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/128/5f2ebe03-fe04-4478-91b4-cd8d8e9849ac_235x297_90.jpg" width="235" height="297" alt="欧米茄(OMEGA)星座系列  男士机械腕表12320352002004" data-original="//a.vpimg3.com/upload/merchandise/pdcvis/2017/09/20/128/5f2ebe03-fe04-4478-91b4-cd8d8e9849ac_235x297_90.jpg" data-img-side="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/104/5fc3ecbb-a91b-40d2-927c-dbc77bca1422_235x297_90.jpg" data-img-back="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/20/66/f759e828-2455-4092-8293-4e7dc16cfeef_235x297_90.jpg" data-img-side-s="//a.vpimg2.com/upload/merchandise/pdcvis/2017/09/20/104/5fc3ecbb-a91b-40d2-927c-dbc77bca1422_54x69_100.jpg" data-img-back-s="//a.vpimg4.com/upload/merchandise/pdcvis/2017/09/20/66/f759e828-2455-4092-8293-4e7dc16cfeef_54x69_100.jpg" data-detail-url="//www.vip.com/detail-1730611-302792274.html" style="display: inline;">                            <div class="goods-business-tag J_businessTag f-hide" id="J_surpriseSprice_icon302792274">                                <img class="" src="" alt="" width="45" height="45">                                <img class="hidden" src="" alt="" width="53" height="53">                            </div>                                                        <div class="goods-corner-tag J_businessTag" id="J_cornerTag302792274"></div>                                                        <div class="prepay-item-tag J_businessTag f-hide">预定</div>                                            </a>                    </div>                    <div class="goods-images J_thumbWrap">                    </div>                </div><div class="goods-info  goods-price-info  ">                    <span class="goods-discount">7.9折</span>					<div class="goods-price-wrapper J_surpriseSprice_wrap21187160081211416 " id="J_surpriseSprice_wrap" data-price="32943" data-tips="" data-original-price-tips="">	                    <em class="goods-sells-price ">							<span class="u-yen currency-symbol">¥</span><!--                             --><span class="price">32943</span>							<span class="price-from"></span>						</em></div>                    <del class="goods-market-price ">						<span class="u-yen  currency-symbol">¥</span><!--                         -->41700					</del>                </div><div class="goods-info  prepay-promo-info  f-hide">                    <span class="goods-promo-price"></span>                </div>                                <h4 class="goods-info  goods-title-info">                    <a href="" 欧米茄(OMEGA)星座系列  男士机械腕表12320352002004" mars_sead="te_list_list_name4" target="_blank">&nbsp;欧米茄(OMEGA)星座系列  男士机械腕表12320352002004</a>                </h4>                                <div class="goods-info  goods-membership-benefits-info" id="J_list_warm_mprice_con_302792274" data-ismp=""></div>            </div>        </div>                      <div class="goods-images J_thumbWrap">
+
+        </div>                </div>
+
+    <div class="page list-define-page" id="J_bottom_page">
+        <div id="J-pagingWrap"><span class="total-item-nums">共1页</span><span class="page-select">1</span></div>
+        <div class="fr"></div>
+    </div>
+    <script type="text/html" id="J-findNoneTpl">
+        <div class="pro_list clearfix">
+            <div class="pro_find_none">很抱歉，没有找到符合条件的商品。</div>
+        </div>
+    </script>
+
+    <!-- 419广告 列表页 -->
+    <div id="J_ad419_list_bottom" class="ad_for419_list hidden"></div>
+
+    <!--第一次访问的操作提示-->
+    <div class="shop_tips shop_tips03 hidden" id="J_guide_list">
+        <p><strong>没有选到喜欢的商品？去看看其他品牌吧~</strong><a href="" >去看看&nbsp;&gt;&gt;&gt;</a><span>不用了，谢谢！</span></p>
+    </div>
+
+    <div id="J_te_btn_wrap" class="list-float-navbar">
+        <!-- 顶部悬浮 -->
+        <div id="J_list_topbar_cnt" class="list-topbar-cnt hidden">
+            <div class="pro-list-oper clearfix">
+                <div class="pro-oper">
+                    <div class="pro-oper" id="J-float-proOper"><div class="oper-hd-general J_oper_tag z-oper-current-selected" title="综合" id="J-operAll-hd" mars_sead="te_list_sort_default">    <div class="oper-hd-all ">        <p>综合</p>    </div>    </div><div class="oper-hd-price J_oper_tag " id="J-operPrice-hd" mars_sead="te_list_sort_price">    <div class="oper-price-tc " title="价格由低到高">        <p class="oper-price-txt">            <em>价格</em><span class="db-arrow-change"><i class="vipFont i-cat-dis i-cat-dis-down"></i><i class="vipFont i-cat-dis i-cat-dis-up"></i></span>        </p>    </div>    </div><div class="oper-hd-discot J_oper_tag " title="折扣由低到高" id="J-operdiscount-hd" mars_sead="te_list_sort_discount">    <p class="oper-discount-txt">        <em>折扣</em><span class="db-arrow-change"><i class="vipFont i-cat-dis i-cat-dis-down"></i><i class="vipFont i-cat-dis i-cat-dis-up"></i></span>    </p>    </div><div id="J-have-selected" class="J-select-stock oper-hd-hastock  hidden">    <p>        <a href="" J_fileter_hasStock" class="J-link" mars_sead="te_list_hastock">            <span class="ui-checkbox">                <input type="checkbox" class="ui-checkbox-normal">                <label for="item1-1" class="ui-checkbox-simulation"></label>            </span>            只看有货商品        </a>    </p>    </div></div>
+                    <!-- <div class="oper-hd-price" id="J-floatPrice"></div> -->
+                    <!-- 顶部悬浮筛选内容 -->
+                    <div class="oper-hd-topmore clearfix" id="J-topmore">
+                        <div class="oper-topmore-item">
+                            <dl class="oper-topmore-team J-class" id="J-floatCgWrap">
+                                <dt class="oper-topmore-tit">
+                                    <span id="J-floatCgContName">全部分类</span><!--
+                                    --><i class="i-cat-dis vipFont trans200"></i>
+                                </dt>
+                                <dd class="oper-topmore-cnt J-topmore-cnt">
+                                    <div class="oper-topmore-inner J-ctHeight">
+                                        <div class="J_content topmore-content" id="J-floatCgCont"><a href="" J-secondLink J-fCategory0 sig-secluded" mars_sead="te_list_top_sort">    全部分类<span class="hidden">()</span></a><a href="" J-secondLink J-fCategory32963" mars_sead="te_list_top_sort">    机械男表<span class="">(33)</span></a><a href="" J-secondLink J-fCategory32964" mars_sead="te_list_top_sort">    机械女表<span class="">(10)</span></a></div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="oper-topmore-item">
+                            <dl class="oper-topmore-team J-class" id="J-floatSizesWrap"><dt class="oper-topmore-tit">尺码<i class="i-cat-dis trans200 vipFont"></i></dt><dd class="oper-topmore-cnt">    <div class="oper-topmore-inner J-ctHeight">        <div class="J_content topmore-content"><a href="" J-size-item pro_selected" id="J-fSize" data-index="0" data-size-name="全部尺码" mars_sead="te_list_size">全部尺码</a><a href="" J-size-item" id="J-fSize" data-index="1" data-size-name="均码" mars_sead="te_list_size">均码</a>        </div>    </div></dd></dl>
+                        </div>
+                        <div class="category-tooltips" id="J_category_tooltips">
+                            <div class="arrow-gray-icon"></div>
+                            <span class="cross-gray-icon" id="J_cross_gray_icon"></span>
+                            <div class="category-tooltips-content">还没找到心仪的商品？快来试下筛选功能吧~</div>
+                        </div>
+                    </div>
+                    <!-- 顶部悬浮筛选内容 end -->
+                </div>
+                <!-- 分享 -->
+                <div class="pro-fav-share">
+                    <div class="J_vip_share bdsharebuttonbox bdshare-button-style0-16 share_button" mars_sead="m_list_share_sinaweibo_link_527230f1c88c1" role="button" widget-options="{&quot;id&quot;:&quot;556ec998585a4&quot;,&quot;title&quot;:&quot;分享多一点点，收获更多&quot;,&quot;items&quot;:[&quot;//d.vpimg1.com/upcb/2017/10/13/199/ias_150790013852940.jpg&quot;],&quot;params&quot;:{&quot;%a%&quot;:&quot;欧米茄OMEGA手表专场_唯品会&quot;,&quot;%b%&quot;:&quot;7折起&quot;,&quot;%c%&quot;:&quot;10月15日10时&quot;,&quot;%d%&quot;:&quot;10月15日10时&quot;,&quot;%e%&quot;:&quot;&quot;}}">
+                        <span class="share_tit_wrap"><i class="tit_icon"></i><span class="widget_share_txt tit_cnt">品牌控 爱分享：</span><i class="tit_arrow"></i></span>			<span class="share_sns_wrap share_hide_sns" style="width: 76px;">							<a class="vips_qzone  share_gap " href="#" data-sns="qzone" data-original-title="分享到QQ空间" mars_sead="sns_m_list_share_qzone_link"></a>							<a class="vips_tsina  share_gap " href="#" data-sns="tsina" data-original-title="分享到新浪微博" mars_sead="sns_m_list_share_sinaweibo_link"></a>							<a class="vips_qq  share_gap share_gap_last" href="#" data-sns="qq" data-original-title="分享到QQ好友" mars_sead="sns_m_list_share_qq_link"></a>									</span>		</div>
+                </div>
+                <div class="pro-fav-time-tip">
+                    <em class="vipFont if-countdown"></em>
+                    剩余
+                    <em class="J_brand_countDownDay">1</em>天
+                    <em class="J_brand_countDownHour">16</em>小时
+                    <em class="J_brand_countDownMin">04</em>分
+                    <em class="J_brand_countDownSec">11</em>秒
+                    <i class="ico-time-countdown"></i>
+                </div>
+
+
+                <div class="oper-topmore-fav">
+                    <!-- 收藏 -->
+                    <div class="pro-fav-oper J-pro-fav-oper" id="J_list_cbar_collect" mars_sead="prwlist_flwcol_btn">
+                        <div class="ui-btn-fav J_myFav_tag J_myFavBrand_10005847 J_myFavBrand_1730611" mars_sead="te_list_normal_colbrd_btn">
+                            <a class="ui-btn-fav-like" role="button" href="javascript:;">
+                                <i class="vipFont"></i>
+                                <span class="fav-hidden">收藏品牌<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                            </a>
+                            <a class="ui-btn-fav-cancel" role="button" href="javascript:;">
+                                <span class="liked"><i class="vipFont"></i>已收藏<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                                <span class="cancel">取消收藏</span>
+                                <span class="liked-fail">收藏失败<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                                <span class="cancel-fail">取消收藏失败<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                            </a>
+                        </div><!-- 加入收藏btn end-->
+
+                    </div>
+                    <!-- 收藏 end -->
+                </div>
+
+            </div>
+        </div>
+        <!-- 顶部悬浮 end -->
+        <!-- 顶部悬浮（半品购） -->
+        <div id="J_list_bombar_cnt" class="list-bombar-cnt hidden">
+            <div id="J_collect_share" class="te-collect-bar">
+                <!-- 普通列表页品牌栏 -->
+                <dl class="pro-fav-name">
+                    <dt>欧米茄OMEGA手表专场</dt>
+                    <dd class="">
+                        <span class="salebg2">7</span>折起    </dd>
+                </dl>
+
+                <div class="oper-topmore-item">
+                    <dl class="oper-topmore-team J-class J-floatCgTopWrap">
+                        <dt class="oper-topmore-tit">
+                            <span class="J-floatCgTopContName">全部分类</span><i class="i-cat-dis vipFont trans200"></i>
+                        </dt>
+                        <dd class="oper-topmore-cnt J-topmore-cnt">
+                            <div class="oper-topmore-inner J-ctHeight">
+                                <div class="J_content topmore-content J-floatCgTopCont"><a href="" J-secondLink J-fCategory0 sig-secluded" mars_sead="te_list_top_sort">    全部分类<span class="hidden">()</span></a><a href="" J-secondLink J-fCategory32963" mars_sead="te_list_top_sort">    机械男表<span class="">(33)</span></a><a href="" J-secondLink J-fCategory32964" mars_sead="te_list_top_sort">    机械女表<span class="">(10)</span></a></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+
+                <div class="pro-fav-time-tip">
+                    <em class="vipFont if-countdown"></em>
+                    剩余
+                    <em class="J_brand_countDownDay">1</em>天
+                    <em class="J_brand_countDownHour">16</em>小时
+                    <em class="J_brand_countDownMin">04</em>分
+                    <em class="J_brand_countDownSec">11</em>秒
+                    <i class="ico-time-countdown"></i>
+                </div>
+
+                <div class="pro-fav-survey" id="J_pro_fav_survey"></div>
+
+
+                <!--  收藏人数添加 .pro-fav-pop -->
+                <div class="pro-fav-oper J-pro-fav-oper f-right">
+                    <div class="ui-btn-fav J_myFav_tag J_myFavBrand_10005847 J_myFavBrand_1730611" mars_sead="te_list_flow_colbrd_btn">
+                        <a class="ui-btn-fav-like" role="button" href="javascript:;">
+                            <i class="vipFont"></i>
+                            <span class="fav-hidden">收藏品牌<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                        </a>
+                        <a class="ui-btn-fav-cancel" role="button" href="javascript:;">
+                            <span class="liked"><i class="vipFont"></i>已收藏<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                            <span class="cancel">取消收藏</span>
+                            <span class="liked-fail">收藏失败<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                            <span class="cancel-fail">取消收藏失败<i>(<em class="J_proFav_person_num">75,511</em>)</i></span>
+                        </a>
+                    </div><!-- 加入收藏btn end-->
+
+                </div>
+            </div>
+
+        </div>
+        <!-- 顶部悬浮（半品购） end -->
+    </div>
+
+    <script type="text/html" id="J-floatPriceTpl">
+        <div class="oper-price-tc {$statusCls}">
+            <p class="oper-price-txt">
+                {$name}<i class="i-cat-dis trans200 vipFont">&#xe616;</i>
+            </p>
+            <div class="oper-price-pop">
+                {#list}
+                <p>
+                    <a class="J_filter_param J-link" target="_self" mars_sead="te_list_top_price" href="{$link}">{$name}</a>
+                </p>
+                {#/list}
+            </div>
+        </div>
+    </script>
+
+    <script type="text/html" id="J-floatCgContTpl">
+        {#list}
+        <a href="" J-secondLink J-fCategory{$elemId}" mars_sead="te_list_top_sort">
+            {$name}<span class="{$hideNums}">({$total})</span>
+        </a>
+        {#/list}
+    </script>
+
+    <script type="text/html" id="J-floatSizesWrapTpl">
+        <dt class="oper-topmore-tit">尺码<i class="i-cat-dis trans200 vipFont">&#xe616;</i></dt>
+        <dd class="oper-topmore-cnt">
+            <div class="oper-topmore-inner J-ctHeight">
+                <div class="J_content topmore-content">
+                    {#sizes}
+                    <a href="" J-size-item" id="J-fSize{$id}" data-index="{$index}" data-size-name="{$display_name}" mars_sead="te_list_size">{$display_name}</a>
+                    {#/sizes}
+                </div>
+            </div>
+        </dd>
+    </script>
+
+
+</div>
+        </div>
+            <footer id="footer" class="footer">
+                <div class="footer-inner">
+                    <ul class="footer-vip">
+                        <li>
+                            <i class="footer-vip-ico01">中国第三</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico02">全球直采</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico03">一手货源</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico04">入仓全检</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico05">自营物流</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico06">线下验真</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico07">假货必赔</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico08">任意退货</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico09">万千信赖</i>
+                        </li>
+                        <li>
+                            <i class="footer-vip-ico10">权威荣誉</i>
+                        </li>
+                    </ul>
+                    <div class="footer-list">
+                        <dl class="link-anim">
+                            <dt>服务保障</dt>
+                            <dd>
+                                <a href="//support.vip.com/insurance/" target="_blank" rel="nofollow">正品保证</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/commitment.php" target="_blank" rel="nofollow">7天无理由放心退</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/commitment.php" target="_blank" rel="nofollow">退货返运费</a>
+                            </dd>
+                            <dd>
+                                <a href="//acs.vip.com/" target="_blank" rel="nofollow">7x15小时客户服务</a>
+                            </dd>
+                        </dl>
+                        <dl class="link-anim">
+                            <dt>购物指南</dt>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=308" target="_blank" rel="nofollow">导购演示</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=330" target="_blank" rel="nofollow">订单操作</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=206" target="_blank" rel="nofollow">会员注册</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=329" target="_blank" rel="nofollow">账户管理</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=104" target="_blank" rel="nofollow">收货样品</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?cid=69" target="_blank" rel="nofollow">会员等级</a>
+                            </dd>
+                        </dl>
+                        <dl class="link-anim">
+                            <dt>支付方式</dt>
+                            <dd>
+                                <a href="//act.vip.com/12284.html" target="_blank" rel="nofollow">快捷支付</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank" rel="nofollow">23家主流网银支付</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?cid=37" target="_blank" rel="nofollow">货到付款</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank" rel="nofollow">支付宝、银联等支付</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=336" target="_blank" rel="nofollow">信用卡支付</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=335" target="_blank" rel="nofollow">零钱支付</a>
+                            </dd>
+                        </dl>
+                        <dl class="link-anim">
+                            <dt>配送方式</dt>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=345" target="_blank" rel="nofollow">全场满288元免运费</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=345" target="_blank" rel="nofollow">配送范围及运费</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=63" target="_blank" rel="nofollow">验货与签收</a>
+                            </dd>
+                        </dl>
+                        <dl class="link-anim">
+                            <dt>售后服务</dt>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?cid=74" target="_blank" rel="nofollow">退货政策</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=236" target="_blank" rel="nofollow">退货流程</a>
+                            </dd>
+                            <dd>
+                                <a href="//help.vip.com/themelist.php?type=detail&amp;id=317" target="_blank" rel="nofollow">退款方式和时效</a>
+                            </dd>
+                        </dl>
+                        <dl class="tc last">
+                            <dt>唯品会APP二维码</dt>
+                            <dd>
+                                <img class="lazy" src="//a.vpimg4.com/upload/actpics/xuangou_daily/help/page_bottom_dl_n.png" width="100" height="100" alt="唯品会APP二维码">
+                            </dd>
+                            <dd>下载唯品会移动APP</dd>
+                        </dl>
+                    </div>
+                    <div class="footer-infor">
+                        <p class="footer-infor-link">
+                            <a target="_blank" rel="nofollow" href="//support.vip.com/contact/" title="关于我们">关于我们</a>|
+                            <a target="_blank" rel="nofollow" href="//support.vip.com/contact/?act=en" title="About us">About us</a>|
+                            <a target="_blank" rel="nofollow" href="http://ir.vip.com/" title="Investor Relations">Investor Relations</a>|
+                            <a target="_blank" rel="nofollow" href="//comm.vip.com/media/" title="媒体报道">媒体报道</a>|
+                            <a target="_blank" rel="nofollow" href="//vis.vip.com/stipulate/" title="品牌招商">品牌招商</a>|
+                            <a target="_blank" rel="nofollow" href="//support.vip.com/privacy/" title="隐私条款">隐私条款</a>|
+                            <a target="_blank" rel="nofollow" href="http://job.vip.com" title="唯品诚聘">唯品诚聘</a>|
+                            <a target="_blank" rel="nofollow" href="//support.vip.com/foundation/" title="365爱心基金">365爱心基金</a>|
+                            <a target="_blank" rel="nofollow" href="//vipcard.vip.com" title="唯品卡">唯品卡</a>|
+                            <a target="_blank" href="//support.vip.com/contact/index.php?act=us" title="联系我们">联系我们</a>
+                        </p>
+                        <p class="footer-infor-txt">
+                            Copyright © 2008-2017 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受<a rel="nofollow" href="//support.vip.com/clause/">唯品会用户协议</a>。版权所有 <a rel="nofollow" href="//www.vip.com/">广州唯品会信息科技有限公司</a><br><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010302111111" target="_blank"><img src="//a.vpimg4.com/upload/actpics/act/sp/police_icon.png" width="14" height="14" style="margin:2px 3px 0 0;">粤公网安备 44010302111111号</a>&nbsp;&nbsp;<a rel="nofollow" href="http://www.miibeian.gov.cn/publish/query/indexFirst.action">粤ICP备08114786号</a> <a rel="nofollow" href="http://www.miibeian.gov.cn">ICP经营许可证：粤B2-20080329 </a><a rel="nofollow" href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/61e6abe320e7462baf61aab32a67f256">网络文化经营许可证：粤网文〔2015〕1528-229</a><br><a rel="nofollow" href="//act.vip.com/33543.html">自营主体经营证照</a>&nbsp;&nbsp;<a href="//help.vip.com/themelist.php?type=detail&amp;id=475" target="_blank" rel="nofollow">风险监测信息</a>&nbsp;&nbsp;<a rel="nofollow" href="//act.vip.com/34944.html">互联网药品交易服务资格证（粤C20140002）</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-ft">
+                    <p class="footer-pic">
+                        <a rel="nofollow" target="_blank" href="http://online.unionpay.com/">
+                            <i class="footer-pic-ico01" title="银联特约商户"></i>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="//weiquan.vip.com">
+                            <i class="footer-pic-ico04" title="消费维权服务站"></i>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="http://netadreg.gzaic.gov.cn/ntmm/WebSear/WebLogoPub.aspx?logo=440103103022008082200055">
+                            <i class="footer-pic-ico05" title="红盾电子链接标识"></i>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="http://www.gzjd.gov.cn/">
+                            <i class="footer-pic-ico06" title="网络警察报警平台"></i>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="http://www.weibo.com/u/2931161010?topnav=1&amp;wvr=6&amp;topsug=1&amp;is_hot=1">
+                            <i class="footer-pic-ico07" title="公安局网络警察支队"></i>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="http://credit.szfw.org/CX20160725023666090470.html" id="___szfw_logo___">
+                            <i class="footer-pic-ico09" title="诚信网站"></i>
+                        </a>
+                        <a rel="nofollow" target="_blank" href="http://ss.knet.cn/verifyseal.dll?sn=2011022400100006603&amp;ct=df&amp;a=1&amp;pa=0.801643806276843">
+                            <i class="footer-pic-ico10" title="可信网站"></i>
+                        </a>
+                    </p>
+                </div>
+            </footer>
+
+</body>
+</html>
